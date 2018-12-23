@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel|Indie+Flower|Julius+Sans+One|Montserrat");
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  text-align: center;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+#wrapper {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+img[alt=profile] {
+  border: white solid 2px;
+  border-radius: 50%;
+  height: 25%;
+  width: 25%;
+}
+
+header {
+  font-family: "Julius Sans One", sans-serif;
+  color: #A30015;
+  background: #FBFEF9;
+  padding: 5px;
+}
+header h1 {
+  letter-spacing: 2px;
+}
+
+nav {
+  font-family: "Indie Flower", cursive;
+  font-size: 1.3rem;
+  background: #FBFEF9;
+  padding: 15px 0px;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+}
+nav ul {
+  padding: 10px;
+}
+nav ul li {
+  display: inline;
+  padding: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  color: #A63446;
+}
+
+footer {
+  padding: 10px;
+  background: #998888;
+  color: #EADEDA;
+}
+
+.content-holder {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#welcome {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/vancouver.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+#welcome a {
+  color: white;
+}
+
+#projects {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/stanley.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+#skills {
+  background: #A30015;
+  color: white;
+}
+#skills ul li {
+  display: inline;
+}
+
+#contact {
+  background: #EADEDA;
+  color: #998888;
+}
+
+.row {
+  display: flex;
+}
+.row div {
+  flex: 50%;
+  padding: 10px;
+}
+.row div:nth-child(1) {
+  border-right: white solid 1.5px;
+}
+.row div:nth-child(2) {
+  border-left: white solid 1.5px;
+}
+
+.ranks li {
+  padding: 10px;
+  opacity: 0;
+}
+
+.content {
+  width: 50%;
+  min-width: 300px;
+}
+
+.title-icon {
+  font-size: 3rem;
+}
+
+.proj-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  background: white;
+  color: #A63446;
+  border-radius: 5px;
+  font-weight: bold;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.proj-btn:hover {
+  background: #A63446;
+  color: white;
+}
+
+@keyframes hover {
+  50% {
+    transform: translateY(-3px);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
+}
+#social-media {
+  font-size: 2rem;
+}
+#social-media li {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  transition-duration: 0.5s;
+  transition-property: transform;
+}
+#social-media li a {
+  color: #998888;
+}
+#social-media li:hover {
+  transform: translateY(-6px);
+  animation-name: hover;
+  animation-duration: 1.5s;
+  animation-delay: 0.3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/*# sourceMappingURL=index.css.map */

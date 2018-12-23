@@ -1,0 +1,190 @@
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Indie+Flower|Julius+Sans+One|Montserrat');
+
+$backgroundColor: #FBFEF9;
+$heidel: #A30015;
+$linkColor: #A63446;
+$gains: #EADEDA;
+$taupe: #998888;
+$padding: 10px;
+
+body {
+    height: 100vh;
+    text-align: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#wrapper {
+    min-height: 100vh;
+    max-width: 100%;
+}
+
+img[alt="profile"] {
+    border: white solid 2px;
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+}
+
+header {
+    font-family: 'Julius Sans One', sans-serif;
+    color: $heidel;
+    background: $backgroundColor;
+    padding: 5px;
+    h1 {
+        letter-spacing: 2px;
+    }
+}
+
+nav {
+    ul {
+        li {
+            display: inline;
+            a {
+                text-decoration: none;
+                padding: 10px;
+                color: $linkColor;
+            }
+            padding: 20px;
+        }
+        padding: $padding;
+    }
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3rem;
+    background: $backgroundColor;
+    padding: 15px 0px;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+footer {
+    padding: $padding;
+    background: $taupe;
+    color: $gains;
+}
+
+.content-holder {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#welcome {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/vancouver.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    a {
+        color: white;
+    }
+}
+
+#projects {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('../img/stanley.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+#skills {
+    ul li{
+        display: inline;
+    }
+    background: $heidel;
+    color: white;
+}
+
+#contact {
+    background: $gains;
+    color: $taupe;
+}
+
+.row {
+    display: flex;
+    div {
+        flex: 50%;
+        padding: $padding;
+    }
+
+    div:nth-child(1) {
+        border-right: white solid 1.5px;
+    }
+
+    div:nth-child(2) {
+        border-left: white solid 1.5px;
+    }
+}
+
+.ranks {
+    li {
+        padding: 10px;
+        opacity: 0;
+    }
+}
+
+.content {
+    width: 50%;
+    min-width: 300px;
+}
+
+.title-icon {
+    font-size: 3rem;
+}
+
+.proj-btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    background: white;
+    color: $linkColor;
+    border-radius: 5px;
+    font-weight: bold;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;
+}
+
+.proj-btn:hover {
+    background: $linkColor;
+    color: white;
+}
+
+@keyframes hover {
+	50% {
+		transform: translateY(-3px);
+	}
+
+	100% {
+		transform: translateY(-6px);
+	}
+}
+
+#social-media {
+    li {
+        display: inline-block;
+        position: relative;
+        padding: 10px;
+        transition-duration: .5s;
+        transition-property: transform;
+        a {
+            color: $taupe;
+        }
+        &:hover {
+            //top: -5px;
+            transform: translateY(-6px);
+            animation-name: hover;
+            animation-duration: 1.5s;
+            animation-delay: .3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+    }
+    font-size: 2rem;
+}
