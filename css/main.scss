@@ -7,6 +7,8 @@ $linkColor: #A63446;
 $gains: #EADEDA;
 $taupe: #998888;
 $padding: 10px;
+$mediaSmallScreens: 'screen and (max-width : 1024px)';
+$mediaMediumScreens: 'screen and (max-height : 900px)';
 
 body {
     height: 100vh;
@@ -47,6 +49,9 @@ nav {
                 color: $linkColor;
             }
             padding: 20px;
+            @media #{$mediaSmallScreens} {
+                padding: $padding;
+            }
         }
         padding: $padding;
     }
@@ -67,10 +72,19 @@ footer {
 
 .content-holder {
     height: 100vh;
+    min-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media #{$mediaMediumScreens} {
+        height: 1000px;
+    }
+
+    @media #{$mediaSmallScreens} {
+        height: 1500px;
+    }
 }
 
 #welcome {
@@ -80,6 +94,10 @@ footer {
     color: white;
     a {
         color: white;
+    }
+
+    @media #{$mediaSmallScreens} {
+        height: 1000px;
     }
 }
 
@@ -101,6 +119,9 @@ footer {
 #contact {
     background: $gains;
     color: $taupe;
+    @media #{$mediaSmallScreens} {
+        height: 1000px;
+    }
 }
 
 .row {
@@ -108,6 +129,11 @@ footer {
     div {
         flex: 50%;
         padding: $padding;
+        @media #{$mediaSmallScreens} {
+            flex: none;
+            display: block;
+            position: relative;
+        }
     }
 
     div:nth-child(1) {
@@ -116,6 +142,10 @@ footer {
 
     div:nth-child(2) {
         border-left: white solid 1.5px;
+    }
+
+    @media #{$mediaSmallScreens} {
+        display: block;
     }
 }
 
