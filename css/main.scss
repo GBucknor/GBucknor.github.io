@@ -52,6 +52,9 @@ nav {
             @media #{$mediaSmallScreens} {
                 padding: $padding;
             }
+            @media screen and (max-width: 600px) {
+                padding: 0;
+            }
         }
         padding: $padding;
     }
@@ -83,7 +86,7 @@ footer {
     }
 
     @media #{$mediaSmallScreens} {
-        height: 1500px;
+        height: 1700px;
     }
 }
 

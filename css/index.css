@@ -62,6 +62,11 @@ nav ul li a {
     padding: 10px;
   }
 }
+@media screen and (max-width: 600px) {
+  nav ul li {
+    padding: 0;
+  }
+}
 
 footer {
   padding: 10px;
@@ -84,7 +89,7 @@ footer {
 }
 @media screen and (max-width : 1024px) {
   .content-holder {
-    height: 1500px;
+    height: 1700px;
   }
 }
 
